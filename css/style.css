@@ -125,6 +125,7 @@ main h2 {
 .info {
     border-collapse: collapse;
     width: auto;
+    word-break: break-all;    
 }
 .info th, .info td {
     border: 1px solid #0025a9;
