@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LaTeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body id="top">
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="KUZIRA CAFE"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html#about">自己紹介</a></li>
+                <li><a href="index.html#links">各種リンク</a></li>
+                <li><a href="test.html">テスト用のページ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--ヘッダーここまで-->
+    <!--メイン-->
+    <main> 
+        <h2>数式表示のテスト</h2>
+
+        \[\int_0^1x^2dx=\lim_{N\rightarrow\infty}\sum_{k=1}^{N}\Big(\frac{k}{N}\Big)^2\cdot\frac{1}{N}=\lim_{N\rightarrow\infty}\frac{1}{N^3}\sum_{k=1}^{N}k^2=\lim_{N\rightarrow\infty}\frac{N(N+1)(2N+1)}{6N^3}=\frac{1}{3}\]
+
+        \[
+        \begin{cases}
+            a_1=\sqrt{a_2}\\
+            A\equiv A'\\
+            {\color{blue}p\geq q}\\
+            {\color{red}p\geqq q}\\
+            {n\equiv m \pmod k}\\
+            a\times b=\pi\\
+            \LaTeX
+        \end{cases}
+        \]
+
+        \[
+            \zeta(s)=\sum_{n=1}^\infty \frac{1}{n^s}
+        \]
+
+        \[
+        \begin{cases}
+            \nabla\cdot\boldsymbol{E}=\frac{\rho}{\varepsilon_0}\\
+            \nabla\times\boldsymbol{E}=-\frac{\partial\boldsymbol{B}}{\partial t}\\
+            \nabla\cdot\boldsymbol{B}=0\\
+            \nabla\times\boldsymbol{B}=\mu_0\boldsymbol{j}+\varepsilon_0\mu_0\frac{\partial\boldsymbol{E}}{\partial t}
+        \end{cases}
+        \]
+
+        <a href="test.html#latex">戻る</a>
+    </main>
+    <!--メインここまで-->
+    <!--フッター-->
+    <footer>
+        <div class="gotop">
+            <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>
+        </div>
+        <p class="copyright">&copy; 2024 shanigoro</p>
+    </footer>
+    <!--フッターここまで-->
+</body>
+</html>

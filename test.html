@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>テスト用のページ｜しゃにごろのサイト</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function ChangeParaToDate() {
+            document.getElementById('eid_date').innerHTML = Date();
+        }
+    </script>
+</head>
+<body id="top">
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="KUZIRA CAFE"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html#about">自己紹介</a></li>
+                <li><a href="index.html#links">各種リンク</a></li>
+                <li><a href="test.html">テスト用のページ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--ヘッダーここまで-->
+
+    <!--メイン-->
+    <main>
+        <h2>HTMLとCSS</h2>
+        <div id="htmlcss">
+            <a href="test.html">ハイパーリンク(このページ自身に飛ぶ)</a><br>
+            <a href="test.html" target="_blank">新しいタブで開く</a>
+            <h3>小見出し</h3>
+            <h4>さらに小見出し</h4>
+            <h5>もっと小見出し</h5>
+            <h6>多分限界</h6>
+            画像表示：<br>
+            <img src="images/coulomb.png"><br>
+            文字装飾(css直書き含む)：<br>
+            <span style="color: red;">赤文字</span><br>
+            <span style="font-size: 25px;">25pxの文字</span><br>
+            <span style="font-weight: bold;">太字(css)</span><br>
+            <strong>重要</strong>
+            <b>太字(html)</b>
+            <cite>引用</cite>
+            <em>強調</em>
+            <i>斜体</i>
+            <blockquote>長い引用</blockquote>
+            <mark>マーカー</mark>
+            <small>注釈</small>
+            <sub>下付き文字</sub>
+            <sup>上付き文字</sup><br>
+            表の作成：
+            <table>
+                <tr>
+                    <th>1行目見出しセル</th>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                    <td>1-3</td>
+                </tr>
+                <tr>
+                    <th>2行目見出しセル</th>
+                    <td>2-1</td>
+                    <td>2-2</td>
+                    <td>2-3</td>
+                </tr>
+            </table>
+            リストの作成：
+            <ul>
+                <li>非順序付きリスト</li>
+                <li>非順序付きリスト</li>
+                <li>非順序付きリスト</li>
+            </ul>
+            <ol>
+                <li>順序付きリスト</li>
+                <li>順序付きリスト</li>
+                <li>順序付きリスト</li>
+            </ol>
+            地図埋め込み：<br>
+            <iframe
+                id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="300"
+                height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe><br>
+            動画埋め込み(きいねくさん)：<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VnB4usnL8l8?si=s7QES-DP7E3nCEBu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+            ナビゲーション(CSS適用済み)：<br>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="test.html">TEST</a></li>
+                </ul>
+            </nav>
+            ボタン：<br>
+            <button type ="button">クリックできるよ</button><br>
+            フォームの作成：
+            <div id="form">
+                <form action="formresult.html">
+                    <p>
+                        セレクトリスト<br>
+                        <select name="selectlist_ans">
+                            <option value="1">1つめの選択肢</option>
+                            <option value="2">2つめの選択肢</option>
+                            <option value="3">3つめの選択肢</option>
+                            <option value="4">4つめの選択肢</option>
+                        </select>
+                    </p>
+                    <p>
+                        ラジオボタン<br>
+                        <input type="radio" name="radiobutton_ans" value="1" checked>1つ目<br>
+                        <input type="radio" name="radiobutton_ans" value="2">2つ目<br>
+                        <input type="radio" name="radiobutton_ans" value="3">3つ目<br>
+                    </p>
+                    <p>
+                        チェックボックス<br>
+                        <input type="checkbox" name="checkbox_ans" value="1">1つ目<br>
+                        <input type="checkbox" name="checkbox_ans" value="2">2つ目<br>
+                        <input type="checkbox" name="checkbox_ans" value="3">3つ目<br>
+                    </p>
+                    <p>
+                        テキストフィールド<br>
+                        <input type="text" name="textfield_ans" placeholder="プレースホルダー">
+                    </p>
+                    <p>
+                        テキストエリア<br>
+                        <textarea name="textarea_ans" placeholder="プレースホルダー"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="送信">
+                    </p>
+                </form>
+            </div>
+            ～大量のチェックボックス～<br>
+            <div id="manychecks">
+                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+            </div>
+        </div>
+
+        <h2>プログラムとか</h2>
+        <div id="embed">
+            工事中
+            <script src="sketch.js"></script>
+        </div>
+
+        <h2>CSS</h2>
+        <div id="perfectbox">
+            <p id="perfectboxtext">CSS<br>完全に理解した</p>
+        </div><br>
+        <p>～以下真面目なコード集～</p>
+        <div class="css">
+            <div class="obj" id="square">
+                <p>四角</p>
+            </div>
+            <div class="obj" id="csquare">
+                <p>丸い四角</p>
+            </div>
+            <div class="obj" id="circle">
+                <p>円</p>
+            </div>
+            <div class="obj" id="triangle">
+                <p>三角</p>
+            </div>
+            <div id="picture">
+                <p>画像</p>
+            </div>
+            <div id="pattern">
+                <p>パターン</p>
+            </div>
+            <div>
+                <a href="test.html#perfectbox" id="btn">ボタン</a>
+            </div>
+        </div>
+
+        <h2>L<sup>A</sup>T<sub>E</sub>X</h2>
+        <div id="latex">
+            <a href="latex.html">latex練習コーナー</a>
+        </div>
+    </main>
+    <!--メインここまで-->
+    <!--フッター-->
+    <footer>
+        <div class="gotop">
+            <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>
+        </div>
+        <p class="copyright">&copy; 2024 shanigoro</p>
+    </footer>
+    <!--フッターここまで-->
+</body>
+</html>
