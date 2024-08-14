@@ -235,6 +235,15 @@ main h2 {
     border-bottom: none;
 }
 
+/*p5js*/
+.special {
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    display: block;
+}
+
 
 /*モバイル対応*/
 @media (max-width: 767px) {
