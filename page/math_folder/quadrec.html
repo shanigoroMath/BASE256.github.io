@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<!------------------情報------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二次式型漸化式の分類|BASE256</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!--latex読み込み-->
+    <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" }},
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { matchFontHeight: false },
+        displayAlign: "center",
+        displayIndent: "0em"
+        });
+    </script>
+</head>
+
+
+<body id="top">
+
+
+    <!------------------ヘッダ------------------>
+    <header>
+        
+        <!--ロゴ-->
+        <div class="logo">
+            <a href="../index.html">
+                <span id="logo1">B</span>
+                <span id="logo2">A</span>
+                <span id="logo3">S</span>
+                <span id="logo4">E</span>
+                <span id="logo5">2</span>
+                <span id="logo6">5</span>
+                <span id="logo7">6</span>
+            </a>
+        </div>
+        
+
+        <!--ナビ-->
+        <nav>
+            <ul>
+                <li><a href="../../index.html" id="ahome">ホーム</a></li>
+                <li><a href="../math.html" id="amath">数学</a></li>
+                <li><a href="../mahjong.html" id="amahjong">麻雀</a></li>
+                <li><a href="../p5js.html" id="ap5">p5.js</a></li>
+                <li><a href="../desmos.html" id="afunc">関数アート</a></li>
+                <li><a href="../test.html" id="acss">CSSの練習</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!------------------ヘッダ終了-------------->
+
+
+    <!------------------メイン------------------>
+    <main>
+        
+        <a class="gomath" href="../math.html"></a>
+        <div class="paragraph">
+            <h2><div>2次式型漸化式の分類[高校範囲の漸化式の完全網羅]</div></h2>
+            <p>今回解いていくのは次の漸化式です。</p>
+
+            <div class="whitebox">
+                \[
+                \begin{cases}
+                a_0=k\\
+                pa_{n+1}^2+qa_n^2+ra_{n+1}a_n+sa_{n+1}+ta_n+u=0
+                \end{cases}\\
+                
+                (k,p,q,r,s,t,uは実数)
+                \]
+            </div>
+            
+            <p>この漸化式は高校数学で登場する多くの漸化式を一般化した形になっています。</p>
+            <p>例えば $p=q=r=0$ とすればよく見慣れた1次二項間漸化式<span class="minitext">($sa_{n+1}+ta_n+u=0$)</span>になりますし、$p=r=t=u=0$ とすれば対数を取りたくなる形<span class="minitext">($sa_{n+1}=-qa_n^2$)</span>になります。</p>
+
+            <p>では、解いていきましょう。</p>
+        </div>
+
+        <a class="gomath" href="../math.html"></a>
+
+    </main>
+    <!------------------メイン終了-------------->
+
+
+    <!------------------フッタ------------------>
+    <footer>
+
+        <!--上部に戻る-->
+        <div class="gotop">
+            <a href="#top">&gt;&gt;Go page top&lt;&lt;</a>
+        </div>
+
+        <!--権利表示-->
+        <p class="copyright">&copy; 2024 Shanigoro</p>
+
+    </footer>
+    <!------------------フッタ終了-------------->
+
+
+</body>
+
+
+</html>
